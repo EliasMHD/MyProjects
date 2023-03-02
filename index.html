@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum vitae</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div id="cuadrado">
+        <h1 id="Nombre">Elias Marin</h1>
+        <h3 id="Ubicacion"><span class="pepe"><i class="fa-solid fa-location-dot"></i></span>Argentina,Buenos Aires</h3>
+        <img src="/proyecto/img/foto.jpg" alt="" id="foto">
+        <p id="Informacion">
+            Buenos dias, me presento mi nombre es Elias Marin soy de argentina, actualmente estoy aprendiendo programacion y los lenguajes que estoy empezando a manejar princpipalmente son: <span style="color: rgb(145, 145, 11);">HTML</span>,<span style="color: rgb(87, 87, 232);">CSS</span>,<span style="color: orange;">JS</span> Y <span style="color: rgb(131, 249, 131);">Python</span> , este ultimo fue con el que aprendi a programar yo, actualmente estoy en busqueda de fortaceler mis habilidades como programador front end. 
+        </p>
+        <div id="clickme">Modo Noche</div>
+        <div id="clickme2">Modo Dia</div>
+        <button class="button-81" role="button">Follow</button>
+    </div>
+<script>
+	const bclick = document.getElementById('clickme');
+	bclick.addEventListener('click', function black () { 
+		cuadrado.style.backgroundColor = 'black';
+        Informacion.style.color = 'white';
+        Nombre.style.color = 'white';
+	});
+</script>
+<script>
+	const bclick2 = document.getElementById('clickme2');
+	bclick2.addEventListener('click', function white () { 
+		cuadrado.style.backgroundColor = 'white';
+        Informacion.style.color = 'black';
+        Nombre.style.color = 'black';
+
+	});
+</script>
+<script>
+	const bclick3 = document.getElementById('manito');
+	bclick2.addEventListener('click', function saludo () { 
+		manito.style.display = 'none';
+	});
+</script>
+</body>
+</html>
